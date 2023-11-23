@@ -1,7 +1,8 @@
 import socket
+from typing import List, Dict
 
 
-def discover_services():
+def discover_services() -> List[Dict]:
     # SSDP Constants
     SSDP_ADDR = "239.255.255.250"
     SSDP_PORT = 1900
@@ -39,7 +40,7 @@ def discover_services():
     return services
 
 
-def parse_response(response_text):
+def parse_response(response_text) -> Dict:
     """
     Parses the SSP response and returns a dictionary of headers.
 
