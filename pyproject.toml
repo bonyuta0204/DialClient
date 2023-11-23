@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "dial-client"
+version = "0.1.0"
+description = "DIAL client in python"
+authors = ["Yuta Nakamura <nakamurayuta0204@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
